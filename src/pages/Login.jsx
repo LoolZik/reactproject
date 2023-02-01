@@ -6,14 +6,23 @@ import { AuthContext } from '../context';
 import '../styles/App.css'
 
 function Login() {
-  const {setIsAuth} = useContext(AuthContext)
+  const {isAuth ,setIsAuth} = useContext(AuthContext)
+
+  const login = (e) => {
+    e.preventDefault()
+
+    setIsAuth(true)
+    localStorage.setItem('auth', 'true')
+  } 
 
   return (
-    <div>
-        <h1>Страница для входа</h1>
-        <MyInput/>
-        <MyInput/>
-        <MyButton onClick={() => setIsAuth(true)}>Войти</MyButton>
+    <div className="login">
+      <form className="login__form" onSubmit={login}>
+          <h1>Страница для входа</h1>
+          <MyInput/>
+          <MyInput/>
+          <MyButton>Войти</MyButton>
+      </form>
     </div>
   );
 }

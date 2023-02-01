@@ -3,6 +3,7 @@ import { useRoutes } from "react-router-dom";
 import { AuthContext } from "../context";
 import About from "../pages/About";
 import Login from "../pages/Login";
+import PostIdPage from "../pages/PostIdPage";
 import Posts from "../pages/Posts";
  
 function AppRouter() {
@@ -27,10 +28,10 @@ function AppRouter() {
             path: '/about',
             element: <About/>
         },
-        // {
-        //     path: '/posts',
-        //     element: <About/>
-        // },
+        {
+            path: '/post/:id',
+            element: <PostIdPage/>
+        },
         {
             path: '/*',
             element: <Posts/>
