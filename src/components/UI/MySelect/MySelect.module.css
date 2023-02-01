@@ -1,0 +1,10 @@
+.mySelect {
+    padding: 5px;
+    border-radius: 5px;
+    background: bisque;
+    color: #314755;
+    outline: none;
+}
+.mySelect option{
+    color: #314755;
+}
