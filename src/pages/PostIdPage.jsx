@@ -4,8 +4,6 @@ import PostService from '../API/PostService';
 import Loader from '../components/UI/Loader/Loader';
 import { useFetching } from '../hooks/useFetching';
 
-import '../styles/App.css'
-
 function PostIdPage() {
     const [post, setPost] = useState({})
     const [comments, setComments] = useState([])

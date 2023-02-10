@@ -1,0 +1,15 @@
+.myButton {
+    font-size: 18px;
+    color:aliceblue;
+    padding: 15px 15px;
+    background: linear-gradient(45deg, #5017C2, #BF2DFB);
+    border-radius: 100px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    transition: all 0.4s;
+    &:hover {
+        transition: all 0.4s;
+        
+    }
+}

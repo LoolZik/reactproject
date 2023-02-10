@@ -1,5 +1,5 @@
 import React from "react";
-import cl from "./MyInput.module.css"
+import cl from "./MyInput.module.scss"
 
 const MyInput = ({...porps}) => {
 

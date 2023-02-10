@@ -1,5 +1,5 @@
 import React from "react";
-import cl from "./MySelect.module.css"
+import cl from "./MySelect.module.scss"
 
 const MySelect = ({filter, setFilter, options}) => {
 

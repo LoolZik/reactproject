@@ -9,7 +9,7 @@ import MyModal from '../components/UI/MyModal/MyModal';
 import MySelect from '../components/UI/MySelect/MySelect';
 import { useFetching } from '../hooks/useFetching';
 import { useSortedAndSearchedPosts } from '../hooks/usePosts';
-import '../styles/App.css'
+import '../styles/App.scss'
 import { getArrayPages, getTotalPages } from '../utils/pages';
 
 function Posts() {
@@ -63,7 +63,7 @@ function Posts() {
   }, [page])
 
   return (
-    <div>
+    <div className='posts'>
       <MyButton onClick={() => setShowDialog(true)}>создать пост</MyButton>
       <div className="query">
           <MyInput

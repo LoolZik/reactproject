@@ -1,5 +1,5 @@
 import React from "react";
-import cl from "./MyModal.module.css";
+import cl from "./MyModal.module.scss";
 
 const MyModal = ({children, showDialog, hideDialog}) => {
     const rootClasses = showDialog ? [cl.myModal, cl.active] : [cl.myModal]

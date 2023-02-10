@@ -7,7 +7,8 @@ function PostItem({post, remove}) {
     return (
         <div className="post">
             <div>
-                <div>{post.id} {post.title}</div>
+                <div className="post__id">{post.id}</div>
+                <div>{post.title}</div>
                 <div>{post.body}</div>
             </div>
             <div className="post__btns">
