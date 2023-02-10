@@ -24,7 +24,7 @@ body {
 }
 
 .posts {
-    background: white;
+    background: rgba(255, 255, 255, 0.8);
     padding: 15px;
     border-radius: 30px;
 }
@@ -54,7 +54,7 @@ body {
         position: absolute;
         top: -10px;
         left: 30px;
-        background: white;
+        background: #E7D3F9;
         padding: 0 5px;
     }
 }
@@ -180,7 +180,7 @@ body {
 /* #36393F   #2F3136   #202225 */
 .navbar {
     padding: 30px 0;
-    background: #2F3136;
+    color: white;
 }
 .navbar span{
    cursor: pointer;
@@ -189,13 +189,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 60%;
+    width: 58%;
     margin: auto;
 }
 .pur {
+    color: white;
     text-decoration: none;
     margin-left: 30px;
-    text-transform: none;
+    padding: 0 15px 5px;
 }
 
 
